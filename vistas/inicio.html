@@ -2,23 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Was Was</title>
+        <title>Hyo</title>
+        <link rel="stylesheet" href="../css/persistencia.css">
+        <link rel="stylesheet" href="../css/fuentes.css">
     </head>
     <body>
-        <button onclick="cerrarSesion()">cerra sesion</button>
-        <div class="menu">
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="tareas.html">Tareas</a></li>
-                <li><a href="notas.html">Notas</a></li>
-            </ul>
-        </div>
         <div class="contenido">
-            <div class="usuario">
-                <p id="nombreUsuario"></p>
+            <header>
+                <div class="cabecera-top">
+                    <h1>HYO</h1>
+                    <button class="btnCerrarSesion" onclick="cerrarSesion()">Cerrar sesión</button>
+                </div>
+                <div class="cabecera-bot">
+                    <div class="usuario">
+                        <p id="nombreUsuario">Usuario</p>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="inicio.html">Inicio</a></li>
+                            <li><a href="links.html">Links</a></li>
+                            <li><a href="tareas.html">Tareas</a></li>
+                            <li><a href="notas.html">Notas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="cuerpo">
+                <h2>¡Tu buscas, yo recuerdo!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <h1>Bienvenido a Was Was</h1>
         </div>
         <script src="../js/main.js" charset="utf-8"></script>
         <script src="../js/inicio.js" charset="utf-8"></script>

@@ -1,0 +1,61 @@
+#titulo, #url {
+    height: 30px;
+    width: 50%;
+    display: block;
+    margin: 1em auto;
+}
+#descripcion {
+    width: 50%;
+    display: block;
+    margin: 1em auto;
+    resize: none;
+}
+.btnGuardar {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    background-color: #238bd4;
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+.btnGuardar:hover {
+    background-color: #4596d0;
+}
+.btnGuardar:active {
+    background-color: #1a73b3;
+}
+
+#tabla {
+    /*border: 1px solid #000;*/
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1em;
+    border-radius: 2px;
+}
+    #tabla tr {
+    }
+    #tabla th {
+        text-align: left;
+    }
+    #tabla td {
+        width: 200px;
+        border-top: 1px solid #f1f1f1;
+    }
+    #tabla td+td {
+        width: calc(100% - 200px);
+    }
+    #tabla a {
+        display: block;
+        text-decoration: none;
+        color: #29aafd;
+        padding: .5em;
+        /*font-weight: bold;*/
+    }
+    #tabla a:hover {
+        font-weight: bold;
+        background-color: rgba(78, 180, 242, 0.15);
+    }

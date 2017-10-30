@@ -2,34 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Was Was</title>
+        <title>Hyo</title>
+        <link rel="stylesheet" href="../css/fuentes.css">
+        <link rel="stylesheet" href="../css/persistencia.css">
+        <link rel="stylesheet" href="../css/links.css">
     </head>
     <body>
-        <button onclick="cerrarSesion()">cerra sesion</button>
-        <div class="menu">
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="tareas.html">Tareas</a></li>
-                <li><a href="notas.html">Notas</a></li>
-            </ul>
-        </div>
         <div class="contenido">
-            <div class="usuario">
-                <p id="nombreUsuario"></p>
-            </div>
-            <div class="frmLink">
-                <input type="text" id="titulo" placeholder="Titulo" required>
-                <input type="text" id="url" placeholder="URL" required>
-                <input type="text" id="descripcion" placeholder="Descripcion">
-                <button onclick="guardarClick()">Guardar link</button>
-            </div>
-            <h1>Bienvenido a Was Was - Links</h1>
-            <div id="tablas">
+            <header>
+                <div class="cabecera-top">
+                    <h1>HYO</h1>
+                    <button class="btnCerrarSesion" onclick="cerrarSesion()">Cerrar sesión</button>
+                </div>
+                <div class="cabecera-bot">
+                    <div class="usuario">
+                        <p id="nombreUsuario">Usuario</p>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="inicio.html">Inicio</a></li>
+                            <li><a href="links.html">Links</a></li>
+                            <li><a href="tareas.html">Tareas</a></li>
+                            <li><a href="notas.html">Notas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="cuerpo">
+                <h2>Mis links</h2>
+                <div class="frmLink">
+                    <input type="text" id="titulo" placeholder="Titulo" required>
+                    <input type="text" id="url" placeholder="URL" required>
+                    <textarea type="text" id="descripcion" placeholder="Descripción" rows="10"></textarea>
+                    <button class="btnGuardar" onclick="guardarClick()">Guardar link</button>
+                </div>
+                <div id="tablas">
 
+                </div>
             </div>
-            <table id="tabla">
-            </table>
         </div>
         <script src="../js/links.js" charset="utf-8"></script>
         <script src="../js/main.js" charset="utf-8"></script>
